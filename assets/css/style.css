@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "SF Pro";
+  src: url("../fonts/SF_Pro/SF-Pro.ttf");
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+  .container {
+    position: absolute;
+    top: 5vh;
+    width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    flex-direction: column;
+  }
+
+  .button_container {
+    width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    flex-direction: "row";
+  }
+  
+  h2 {
+    font-family: "SF Pro", monospace;
+    font-size: 8vw;
+    font-weight: bold;
+    color: white;
+  }
+
+  h3 {
+    font-family: "SF Pro", monospace;
+    font-size: 4vw;
+    font-weight: bold;
+    color: white;
+  }
+
+  .play-text {
+    color: white;
+    font-size: 2vw;
+    margin: 0;
+  }
+} 
+
+@media (min-width: 601px) {
+
+  .container {
+    position: absolute;
+    top: 10vh;
+    width: 70vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    flex-direction: column;
+  }  
+
+  .button_container {
+    width: 70vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    flex-direction: "row";
+  }
+
+  h2 {
+    font-family: "SF Pro", monospace;
+    font-size: 3vw;
+    font-weight: bold;
+    color: white;
+  }
+
+  h3 {
+    font-family: "SF Pro", monospace;
+    font-size: 2vw;
+    font-weight: bold;
+    color: white;
+  }
+
+  .play-text {
+    color: white;
+    margin: 0;
+    font-size: 1.5vw;
+  }
+}
+
+
+
+body {
+  background-color: black;
+  margin: 0 auto;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  border: 0;
+  background-color: black;
+}
+
+h1 {
+  margin-top: 0;
+  padding-left: 25%;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 2vw;
+  width: 50vw;
+  text-align: center;
+}
+
+.play-button {
+  cursor: pointer;
+  width: 20vw;
+  height: 5vw;
+  margin-left: 1vw;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-width: 0.5vw;
+  border-color: #FFDA79;
+  border-radius: 2vw;
+  background-color: black;
+  /* box-shadow: 0 0.1vw 0.2vw rgba(0,0,0,0.12), 0 0.1vw 0.2vw rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  background-image: linear-gradient(to right, #000000 0%, #a7b2c4 40%, #DDDDDD 100%) */
+}
+
+.play-button:hover{
+  box-shadow: 0 0.3vw 0.6vw rgba(0,0,0,0.19), 0 0.3vw 0.3vw rgba(0,0,0,0.23);
+  margin: 0.5vw 1vw 0.7vw;
+  background-position: right center;
+}
